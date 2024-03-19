@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.btn-primary{
+    background: #1db954;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px; /* espaço entre as letras */
+    font-weight: bold;
+    transition: all 300ms ease;
+    font-family: 'Roboto', sans-serif;
+}
+.btn-primary:hover{
+    background: #1ed760;
+    cursor: pointer;
+
+}
+.logo{
+    height: 40px; /* tamnho do logo */
+    width: auto;
+}
+/* navbar */
+#navbar{
+    display: flex;
+    background-color: #0006;
+    justify-content: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#navbar .navbar-container{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+#navbar .navbar-container ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+#navbar .navbar-container ul li{
+    padding: 0 20px;
+    transition: all 500ms ease; 
+}
+#navbar .navbar-container ul li:hover{ /*quando passar o mouse em cima o texto fica verde*/
+    color: #1db954;
+    cursor: pointer;
+}
+#navbar .navbar-container ul li:nth-child(3){
+    border-left: 1px solid white;
+}
+/* showcase */
+#showcase{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url('/img/pexels-andrea-piacquadio-3765147.jpg') center center/cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: color; /* escurecer a imagem */
+}
+#showcase .showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#showcase .showcase-container h2{
+    font-size: 5rem;
+}
+#showcase .showcase-container p{
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+/* footer */
+#footer{
+    background: black;
+    color: white;
+    padding: 40px 0;
+}
+#footer .footer-content{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 80px 0;
+}
+#footer .footer-content .footer-menu{
+    margin: 0 60px;
+    list-style: none;
+}
+#footer .footer-content .footer-menu .footer-menu-item{
+    margin: 25px 0;
+    transition: all 300ms ease;
+}
+#footer .footer-content .footer-menu .footer-menu-item:hover{
+    color:#1ed760;
+    cursor: pointer;
+}
+
+#footer .footer-content .footer-menu p{
+    font-weight: bold ;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.8rem; /* tamanho da letra  */
+} 
+/* Footer Socials */
+.socials{
+    display: flex;
+    font-size: 30px;
+    transition: all 300ms ease; 
+}
+.footer-info .footer-info-items .footer-info-item{
+    color: #1ed760;
+    cursor: pointer;
+}
+.socials i{
+    margin:  0 20px;
+}
+/* Footer info */
+.footer-info{
+    display: flex; /* uma coluna do lado da outra  */
+    justify-content: space-between; /* a imagem foi para o outro lado da tela */
+    align-items: flex-end; /*foi para a parte de baixo do site*/
+    margin: auto;
+    width: 60%;
+    margin: auto;
+    font-weight: bold;
+    color:#919496;
+    font-size: 0.75rem;
+}
+.footer-info .footer-info-items .footer-info-item{
+    margin: 0 10px;
+    transition: all 300ms ease;
+   
+}
+.footer-info .footer-info-items .footer-info-item:hover{
+    color: #1ed760;
+    cursor: pointer;
+}
+.footer-info .footer-info-items{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+
+}
+.footer-info .rights .country{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+.footer-info .rights .country .brazil-flag{
+    height: 20px;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+}
